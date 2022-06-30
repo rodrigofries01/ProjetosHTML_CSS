@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+  <script src="./JS/index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JO-KEN-PO</title>
+</head>
+<body>
+  <div class="container">
+    <h1>JO-KEN-PO</h1>
+
+    <div class="links">
+      <h3>Selecione sua arma:</h3>
+        <button id="pedra"><img src="./IMG/PEDRA.png" alt="" srcset=""></button>
+        <button id="papel"><img src="./IMG/PAPEL.png" alt="" srcset=""></button>
+        <button id="tesoura"><img src="./IMG/TESOURA.png" alt="" srcset=""></button>
+        <button id="lagarto"><img src="./IMG/LAGARTO.png" alt="" srcset=""></button>
+        <button id="spock"><img src="./IMG/SPOCK.png" alt="" srcset=""></button>
+    </div><!--links-->
+
+    <div class="computer">
+      <form id="pchoose">
+        <p>
+          <label for="pc">Computador:</label>
+          <input type="text" name="pc" readonly>
+        </p>
+      </form><!--pchoose-->
+    </div><!--computer-->
+
+    <div class="count">
+      <form id="contar">
+        <label for="vic">Vitorias:</label>
+        <input type="text" name="vic" readonly>
+        <label for="lose">Derrotas:</label>
+        <input type="text" name="lose" readonly>
+        <label for="empate">Empates:</label>
+        <input type="text" name="empate" readonly>
+
+        <input type="reset" value="Resetar" id="reset">
+      </form><!--contar-->
+    </div><!--count-->
+
+    <div class="choose">
+      <div class="escolha">
+        <div id="win">
+          <h2 class="h2">Você Ganhou!</h2>
+          <span>Parabéns!</span>
+        </div><!--win-->
+
+        <div id="lose">
+          <h2 class="h2">Você Perdeu!</h2>
+          <span>Noob!</span>
+        </div><!--lose-->
+
+        <div id="draw">
+          <h2 class="h2">Empate!</h2>
+          <span>Sorte na Proxima!</span>
+        </div><!--draw-->
+      </div><!--escolha-->
+    </div><!--choose-->
+
+  </div><!--container-->
+</body>
+</html>
